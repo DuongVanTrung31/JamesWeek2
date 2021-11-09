@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyển đổi tiền tệ</title>
+</head>
+<body>
+        <table>
+            <tr>
+                <th>Amount</th>
+                <th>Form Currency</th>
+                <th>To Currency</th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="number" id="amount" value="">
+                </td>
+                <td>
+                    <select name="" id="formCurrent">
+                        <option value="1">VietNam</option>
+                        <option value="23000">USD</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="" id="toCurrent">
+                        <option value="23000">USD</option>
+                        <option value="1">VietNam</option>
+                    </select>
+                </td>    
+                <td>
+                    <button onclick="convert()" value="">Convert</button>
+                </td>
+            </tr>
+            <tr>
+                <td><h2>Result: <span id="output" style="color: red;"></span></h2></td>
+            </tr>
+        </table>
+    <script src="/all_js/doitien.js"></script>
+</body>
+</html>
