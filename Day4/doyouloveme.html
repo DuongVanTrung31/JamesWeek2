@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do you love me?</title>
+    <style>
+        body {
+            display: block;
+            margin: 10px;
+        }
+
+        button {
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+        <h1>Do you love me?</h1>
+        <button type="button" id="btnYes" value="yes" onclick="alert('<3')">Yes</button>
+        <button type="button" id="btnNo" value="no" onmouseover="moveAround()">No</button>
+    <script>
+        function moveAround() {
+            let random1 = Math.floor(Math.random()) * innerHeight;
+            let random = Math.floor(Math.random()) * innerWidth;
+            let move = document.getElementById("btnNo");
+            move.style.left = random1 + "px";
+        }
+    </script>
+</body>
+</html>
