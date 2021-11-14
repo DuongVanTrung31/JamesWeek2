@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let soDien = +prompt('Nhập vào số điện tiêu thụ:');
+        let giaTien;
+    if (soDien >= 150) {
+        giaTien = soDien * 5000;
+        alert('tiền điện là ' + giaTien);
+    } else if (soDien >= 100) {
+        giaTien = soDien * 4000;
+        alert('tiền điện là ' + giaTien);
+    }else if (soDien >= 50) {
+        giaTien = soDien * 3000;
+        alert('tiền điện là ' + giaTien);
+    } else {
+        giaTien = soDien * 2000;
+        alert('tiền điện là ' + giaTien);
+    }
+    </script>
+</body>
+</html>

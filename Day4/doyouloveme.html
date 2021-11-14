@@ -7,25 +7,26 @@
     <title>Do you love me?</title>
     <style>
         body {
-            display: block;
-            margin: 10px;
+            text-align: center;
         }
 
         button {
-            margin: 15px;
+            width: auto;
+            height: 30px;
+            margin: 20px;
         }
     </style>
 </head>
 <body>
-        <h1>Do you love me?</h1>
-        <button type="button" id="btnYes" value="yes" onclick="alert('<3')">Yes</button>
-        <button type="button" id="btnNo" value="no" onmouseover="moveAround()">No</button>
+    <h2>Do you love me?</h2>
+    <button type="button" id='yes' value="Yes" onclick="alert('I <3 you too')">Yes</button>
+    <button type="button" id='no' value="No" onmouseover="not()" style="position: relative; left: 0; top: 0;">No</button>
     <script>
-        function moveAround() {
-            let random1 = Math.floor(Math.random()) * innerHeight;
-            let random = Math.floor(Math.random()) * innerWidth;
-            let move = document.getElementById("btnNo");
-            move.style.left = random1 + "px";
+        function not() {
+            let x = Math.floor(Math.random() * window.innerWidth);
+            let y = Math.floor(Math.random() * window.innerHeight);
+            document.getElementById('no').style.left = x + 'px';
+            document.getElementById('no').style.top = y + 'px';
         }
     </script>
 </body>
